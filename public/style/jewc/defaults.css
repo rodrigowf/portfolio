@@ -1,0 +1,317 @@
+br {
+  clear: right;
+}
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+/* Forma como era feito antes
+.row(@columns:@columns) {
+  display: block;
+  width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width);
+  margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1);
+  // *width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width)-@correction;
+  // *margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1)-@correction;
+  .clearfix;
+}
+*/
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+body {
+  width: auto;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body div.svgBackground {
+  float: left;
+  position: fixed;
+  z-index: -999;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+body div.svgBackground .svgBackground {
+  left: 0px;
+  top: 0px;
+  float: left;
+}
+.container {
+  width: 960px;
+  margin: auto;
+  overflow-x: hidden;
+  width: 1012px;
+  padding-left: 25px;
+}
+@font-face {
+  font-family: Cafeta;
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/CAFETA__.TTF');
+}
+@font-face {
+  font-family: CafetaIe;
+  src: url('fonts/CAFETA_IE__.eot');
+  /*Para o IE, deve ficar antes da declaração do outro arquivo*/
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: LeagueGothicIe;
+  src: url('fonts/League_Gothic_ie.eot');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: LeagueGothic;
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/League_Gothic.ttf');
+}
+@font-face {
+  font-family: GauntletClassic;
+  src: url('fonts/GauntletClassic_TB.eot');
+  /*Para o IE, deve ficar antes da declaração do outro arquivo*/
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/GauntletClassic_TB.otf');
+}
+@font-face {
+  font-family: GauntletThin;
+  src: url('fonts/GauntletThin_TB.eot');
+  /*Para o IE, deve ficar antes da declaração do outro arquivo*/
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/GauntletThin_TB.otf');
+}
+* {
+  color: #2e2d2c;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: inline;
+  float: left;
+  width: 950px;
+  margin: 0 5px;
+}
+body {
+  font-family: GauntletClassic;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a.button,
+*[type="button"],
+input[type="submit"],
+legend {
+  font-family: Cafeta, CafetaIe, LeagueGothic, LeagueGothicIe, sans-serif;
+  text-transform: uppercase;
+}
+h1.atention {
+  font-size: 68px !important;
+}
+h1 {
+  font-size: 60px !important;
+  line-height: 60px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+h2 {
+  font-size: 38px !important;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+h3 {
+  margin-top: 28px;
+  margin-bottom: 28px !important;
+  font-size: 28px !important;
+  line-height: 28px;
+}
+h4 {
+  font-size: 18px !important;
+  margin-bottom: 10px !important;
+}
+.ie h1.atention {
+  font-size: 60px !important;
+}
+.ie h1 {
+  font-size: 50px !important;
+  line-height: 60px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.ie h2 {
+  font-size: 28px !important;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+.ie h3 {
+  margin-top: 28px;
+  margin-bottom: 28px !important;
+  font-size: 24px !important;
+  line-height: 28px;
+}
+.ie h4 {
+  font-size: 18px !important;
+  margin-bottom: 10px !important;
+}
+p {
+  font-family: GauntletClassic !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  color: #979796 !important;
+  display: inline;
+  float: left;
+  margin-bottom: 20px !important;
+}
+p.big {
+  font-size: 21px !important;
+  line-height: 28px;
+}
+p.thin {
+  font-family: GauntletThin !important;
+}
+legend {
+  font-size: 28px !important;
+}
+label {
+  font-family: GauntletClassic !important;
+  font-size: 15px !important;
+  color: #979796 !important;
+}
+button,
+a.button,
+*[type="button"],
+*[type="submit"] {
+  background: #a8a7a7;
+  border-radius: 0px;
+  border: 0px solid #a8a7a7;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px rgba(255, 255, 255, 0.2);
+  display: inline;
+  float: left;
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0 20px 0 20px;
+  color: #ffffff;
+  font-size: 23px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: center;
+}
+button.small,
+a.button.small,
+*[type="button"].small,
+*[type="submit"].small {
+  font-size: 16px !important;
+  line-height: 16px!important;
+  padding: 5px 10px 5px 10px !important;
+}
+button.small.ie,
+a.button.small.ie,
+*[type="button"].small.ie,
+*[type="submit"].small.ie {
+  font-size: 13px !important;
+}
+form {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+form fieldset {
+  display: inline;
+  margin-top: 40px;
+}
+form fieldset legend {
+  margin-bottom: 25px !important;
+  display: inline;
+  float: left;
+  width: 950px;
+  margin: 0 5px;
+  vertical-align: bottom;
+}
+form div.row {
+  display: inline;
+  float: left;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 43px;
+}
+form div.row label {
+  display: inline;
+  float: left;
+  width: 190px;
+  margin: 0 5px;
+}
+form input[type="text"],
+form input[type="password"] {
+  display: block;
+  float: left;
+  width: 456px;
+  margin: 0 5px;
+  height: 36px;
+  padding: 0 5px;
+  border: 1px solid #d6d6d6;
+}
+form input[type="text"].data,
+form input[type="password"].data {
+  display: block;
+  float: left;
+  width: 136px;
+  margin: 0 5px;
+}
+form textarea {
+  display: block;
+  float: left;
+  width: 662px;
+  margin: 0 5px;
+  clear: left;
+  border: 1px solid #d6d6d6;
+  margin-top: 10px;
+}
+form input[type="checkbox"],
+form input[type="radio"] {
+  display: inline;
+  float: left;
+  width: 30px;
+  margin: 0 5px;
+}
+form select {
+  display: block;
+  float: left;
+  width: 468px;
+  margin: 0 5px;
+  padding-left: 5px;
+  height: 40px;
+  border: 1px solid #d6d6d6;
+}
+/*# sourceMappingURL=defaults.css.map */

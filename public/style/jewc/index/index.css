@@ -1,0 +1,388 @@
+br {
+  clear: right;
+}
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+/* Forma como era feito antes
+.row(@columns:@columns) {
+  display: block;
+  width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width);
+  margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1);
+  // *width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width)-@correction;
+  // *margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1)-@correction;
+  .clearfix;
+}
+*/
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+#layoutUp .barraMenu .menu ul li.home {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+}
+.esquerda {
+  display: inline;
+  float: left;
+  width: 630px;
+  margin: 0 5px;
+}
+.direita {
+  display: inline;
+  float: left;
+  width: 327px;
+  margin: 0 -12px;
+}
+.conteudo {
+  display: inline;
+  float: left;
+  width: 630px;
+  margin: 0 5px;
+}
+p {
+  display: inline;
+  float: left;
+  width: 550px;
+  margin: 0 5px;
+}
+.blog {
+  display: inline;
+  float: left;
+  width: 590px;
+  margin: 0 5px;
+  border-bottom: 2px solid #e1e1e1;
+}
+a.button.small {
+  float: right;
+  width: 80px !important;
+  position: relative;
+  right: 35px;
+  margin-top: 0!important;
+}
+a.button.small.goBlog {
+  background-color: #f08006;
+}
+a.button.small.goCity {
+  background-color: #d1535b;
+}
+#blogLink {
+  text-decoration: none;
+}
+.paraty {
+  display: inline;
+  float: left;
+  width: 590px;
+  margin: 0 5px;
+  border-bottom: 2px solid #e1e1e1;
+}
+#cityLink {
+  text-decoration: none;
+}
+.lista div {
+  margin: 0px;
+}
+div#empresas h4 {
+  margin-bottom: 20px !important;
+}
+div#empresas div.patrocinadores a,
+div#empresas div.patrocinadores a img {
+  margin: 0px 5px 10px 3px;
+  margin-bottom: 20px !important;
+}
+div#empresas div.patrocinadores h4 {
+  margin-bottom: 30px !important;
+}
+div#empresas div.patrocinadores a.diamante,
+div#empresas div.patrocinadores a.diamante img {
+  height: 100px;
+  margin-left: 5px;
+}
+div#empresas div.patrocinadores a.ouro,
+div#empresas div.patrocinadores a.ouro img {
+  max-width: 250px;
+  margin-left: 5px;
+}
+div#empresas div.patrocinadores a.bronze,
+div#empresas div.patrocinadores a.bronze img {
+  max-width: 250px;
+  max-height: 80px;
+  margin-left: 20px;
+}
+div#empresas div.apoiadores a,
+div#empresas div.apoiadores a img {
+  max-height: 80px;
+  max-width: 200px;
+  margin-right: 15px;
+  margin-left: 20px;
+}
+div#empresas div.parceiros a,
+div#empresas div.parceiros a img {
+  max-height: 60px;
+  max-width: 160px;
+  margin: 0px 16px 10px 3px;
+}
+div#empresas #ambev img {
+  margin-left: 10px;
+}
+div#empresas #itau img {
+  margin-left: 10px;
+}
+div#empresas #voeEventos img {
+  margin-left: 30px;
+}
+div#empresas #odebrecht img {
+  padding-bottom: 35px;
+  margin-left: 35px;
+}
+div#empresas #sebrae img {
+  margin-left: 25px;
+}
+div#empresas #visagio img,
+div#empresas #firjan img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 30px;
+}
+div#empresas #firjan img {
+  margin-left: 35px;
+}
+div#empresas #czm img {
+  height: 120px!important;
+  width: 120px;
+  padding-top: 10px;
+  margin-left: 35px;
+}
+div#empresas #ieg img {
+  max-height: 65px;
+  padding-bottom: 20px;
+  margin-left: 35px;
+}
+div#empresas #tarpon img {
+  max-width: 165px;
+  margin-left: 30px;
+}
+div#empresas #republica img {
+  height: 112px!important;
+  width: 196px!important;
+}
+div#empresas #paratyConv img,
+div#empresas #sagre img {
+  margin-left: 37px;
+}
+div#empresas #threejoy img {
+  margin-bottom: 10px;
+}
+div#empresas #bigbeacon img {
+  margin-bottom: 15px;
+}
+div#empresas #compactor img {
+  padding-bottom: 30px;
+}
+div#empresas #bain img {
+  margin-left: 20px;
+  margin-bottom: 35px;
+}
+div#empresas #artemisia img {
+  margin-left: 30px;
+}
+div#empresas #fundBrava img {
+  margin-bottom: 20px;
+}
+div#empresas #neoTrip img {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+/*============ Menu HOME DIREITA ==================*/
+ul.menuHome {
+  background: #30302f;
+  height: 250px;
+  list-style: none;
+  padding: 0;
+}
+ul.menuHome a {
+  text-decoration: none !important;
+}
+ul.menuHome a li {
+  padding: 6px 1px 7px 0px;
+  font-size: 22px;
+  font-family: Cafeta, CafetaIe, LeagueGothic, LeagueGothicIe, sans-serif;
+}
+ul.menuHome a li,
+ul.menuHome a li * {
+  color: #ffffff;
+}
+ul.menuHome a li small {
+  display: block;
+  font-size: 11px;
+  font-family: Gauntlet Classic, Calibri, Arial;
+}
+ul.menuHome li.palestrantes {
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-image: url('../images/home_icon_palestrantes.png');
+  padding-left: 60px;
+}
+ul.menuHome li.submission {
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-image: url('../images/home_icon_submission.png');
+  padding-left: 60px;
+}
+ul.menuHome li.startup {
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-image: url('../images/home_icon_startup.png');
+  padding-left: 60px;
+}
+ul.menuHome li.programacao {
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-image: url('../images/home_icon_programacao.png');
+  padding-left: 60px;
+}
+ul.menuHome li.cidade {
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-image: url('../images/home_icon_cidade.png');
+  padding-left: 60px;
+  padding-bottom: 9px;
+}
+ul.menuHome li.palestrantes:hover {
+  background-color: #ab2158;
+}
+ul.menuHome li.startup:hover {
+  background-color: #b7353f;
+}
+ul.menuHome li.programacao:hover {
+  background-color: #f59d08;
+}
+ul.menuHome li.cidade:hover {
+  background-color: #23a749;
+}
+#contagem,
+.facebookBox,
+.twitterBox,
+.newsletter {
+  padding-left: 20px;
+  padding-top: 0px;
+  border-left: 2px solid #e1e1e1;
+  margin-bottom: 40px !important;
+  margin-top: 20px !important;
+}
+.subsectionTitle {
+  margin-top: 0px !important;
+  padding-top: 0px;
+}
+.newsletter {
+  width: 305px ;
+  height: 200px;
+  position: relative;
+  top: 17px;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px;
+}
+#newsForm {
+  padding-top: 0px !important;
+}
+.newsletterTitle {
+  margin-top: 0px;
+}
+.newsletterSubtitle {
+  font-size: 11pt !important;
+  position: relative;
+  bottom: 10px;
+}
+.email {
+  width: 250px !important;
+  height: 30px !important;
+  position: relative;
+  bottom: 15px;
+  margin-left: 6px;
+}
+.mailSubmit {
+  margin: 10px;
+  margin-top: 0px !important;
+  background-color: #23a749;
+  position: relative;
+  right: 3px;
+}
+.ie .mailSubmit {
+  margin: 10px;
+  background-color: #23a749;
+  position: relative;
+  right: 3px;
+  font-size: 15px;
+}
+#contagem {
+  clear: left;
+  display: inline;
+  float: left;
+  width: 150px;
+  margin: 0 5px;
+}
+#countTitle {
+  font-size: 35px !important;
+  text-align: center;
+  width: auto;
+}
+.ie #countTitle {
+  font-size: 25px !important;
+}
+.dias {
+  font-size: 110px !important;
+  padding-left: 20px;
+  color: #a8a7a7;
+  position: relative;
+  bottom: 10px;
+}
+.ie .dias {
+  font-size: 90px !important;
+  padding-left: 20px;
+  color: #a8a7a7;
+  position: relative;
+  bottom: 20px;
+  right: 15px;
+}
+#countSubtitle {
+  font-size: 14px !important;
+  position: relative;
+  bottom: 20px;
+}
+.ie #countSubtitle {
+  font-size: 14px !important;
+  position: relative;
+  bottom: 35px;
+  left: 3px;
+}
+#biggestEvent {
+  display: inline;
+  float: left;
+  width: 110px;
+  margin: 0 5px;
+  margin-top: 55px;
+  margin-left: 20px;
+}
+.ie #biggestEvent {
+  float: right;
+}
+/*# sourceMappingURL=index.css.map */
